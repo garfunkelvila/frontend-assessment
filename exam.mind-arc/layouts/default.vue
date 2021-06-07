@@ -1,6 +1,7 @@
 <template>
   <v-app dark>
     <v-navigation-drawer
+      v-if="false"
       v-model="drawer"
       :mini-variant="miniVariant"
       :clipped="clipped"
@@ -25,6 +26,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
+      v-if="false"
       :clipped-left="clipped"
       fixed
       app
@@ -58,11 +60,12 @@
       </v-btn>
     </v-app-bar>
     <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <!-- <v-container> -->
+      <nuxt />
+      <!-- </v-container> -->
     </v-main>
     <v-navigation-drawer
+      v-if="false"
       v-model="rightDrawer"
       :right="right"
       temporary
