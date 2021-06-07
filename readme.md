@@ -1,40 +1,21 @@
-Introduction
----
-Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries, but Vue.js is preferred and jQuery is not recommended. Along with following best practices, bonus points for following our [coding guidelines](https://github.com/mindarc/frontend-assessment/wiki/Coding-guidelines). 
+# Introduction
+I used vue.js with nuxt.js as ssr
 
-Exercise 1
----
-Build a responsive page based on the designs.
+## Build Setup
 
-##### Requirements
-1. Match the designs exactly.
-2. Needs to be responsive.
+```bash
+# change directory to exam.mind-arc
+# install dependencies
+$ npm install
 
-##### Designs
-* exercise1-desktop.png
-* exercise1-mobile.png
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-##### Assets
-* Desktop banner - http://via.placeholder.com/1920x650
-* Mobile banner - http://via.placeholder.com/600x600
-* Content images - http://via.placeholder.com/400x300
-
-Exercise 2
----
-Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
-
-##### Requirements
-1. Display data in tabs on desktop.
-2. Display data in an accordion on mobile.
-3. Only 1 accordion/tab should be open at a time.
-4. Open the first accordion/tab on load.
-5. If the open accordion is selected, close it.
-
-###### Bonus points
-* Improve the user experience with meaningful animations/transitions.
-* Design and styling.
-* Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
-
-Submission
----
-We recommend submitting your completed assessment as a forked repository. Please replace README content with instructions and relevant documentation.
+# build for production and launch server
+$ npm run build
+$ npm run start
+```
+## Some notes
+* I used Vuetify because I read the coding guidelines last. My bad.
+* I always use `is` with booleans and may use `has` in the future.
+* I'm not familiar with `BEM` syntax, I'll have a quick check on it later.
