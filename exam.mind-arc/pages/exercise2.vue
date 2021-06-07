@@ -20,7 +20,11 @@
         </v-card>
       </v-tab-item>
     </v-tabs-items>
-    <v-expansion-panels v-show="$vuetify.breakpoint.xs" accordion>
+    <v-expansion-panels
+      v-show="$vuetify.breakpoint.xs"
+      :value="tab"
+      accordion
+    >
       <v-expansion-panel
         v-for="item in dataJson"
         :key="item.title"
